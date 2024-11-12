@@ -1,0 +1,47 @@
+<%if(userData){%>
+    <div class="outer">
+      <div class="outer-container">
+        <div class="inner">
+            <div class="update-header">
+                <h1>Update</h1>
+            </div>
+            <div class="update-main">
+                <form class="row g-3" action="/update/<%=userData.id%>" method="post">
+                    <input type="hidden" name="id" value="<%=userData.id%>">
+                    <div class="col-md-6">
+                      <label for="designation" class="form-label">Job Designation</label>
+                      <input type="text" class="form-control" id="designation" name="designation" value="<%=userData.designation%>">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="location" class="form-label">Job Location</label>
+                      <input type="text" class="form-control" id="location" name="location" value="<%=userData.location%>">
+                    </div>
+                    <div class="col-12">
+                      <label for="skills" class="form-label">Skills Required</label>
+                      <input type="text" class="form-control" id="skills" name="skills" value="<%=userData.skills%>">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="salary" class="form-label">Salary</label>
+                      <input type="text" class="form-control" id="salary" name="salary" value="<%=userData.salary%>">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="requiredApplicants" class="form-label">No of Positions</label>
+                      <input type="number" class="form-control" id="requiredApplicants" name="requiredApplicants" value="<%=userData.requiredApplicants%>">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="lastDate" class="form-label">Last Date</label>
+                      <input type="date" class="form-control" id="lastDate" name="lastDate" value="<%=userData.lastDate%>">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="companyName" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="companyName" name="companyName" value="<%=userData.companyName%>">
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+  <%}%>

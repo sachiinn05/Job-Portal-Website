@@ -1,0 +1,26 @@
+<div class="outer-container">
+    <table class="table">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">Sr.no</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Resume</th>
+          </tr>
+        </thead>
+        <%users.forEach(user=>{%>
+        <tbody>
+          <tr>
+            <th scope="row"><%=user.id%></th>
+            <td><%=user.name%></td>
+            <td><%=user.email%></td>
+            <td><%=user.contact%></td>
+            <td>
+              <a type="button" class="btn btn-primary" href="/<%=user.resume%>">View Resume</a>
+            </td>
+          </tr>
+        </tbody>
+        <%})%>
+      </table>
+</div>
