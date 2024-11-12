@@ -1,5 +1,5 @@
 # [Job-Portal-Website](https://job-portal-website-zn3z.onrender.com)
-# Job Portal Website
+
 
 ## Project Overview
 The **Job Portal Website** is an online platform that connects job seekers and employers. It allows job seekers to browse job opportunities, apply for jobs, and manage their profiles. Employers can post new job listings, manage applications, and search for candidates. This project aims to simplify the job application process and make it more accessible for both job seekers and employers.
@@ -74,10 +74,10 @@ MAILGUN_DOMAIN=<your-mailgun-domain> # For sending email notifications (optional
 5. **Run the application locally**:
   npm start
 
-**License**
+##License##
 This project is licensed under the MIT License. See the LICENSE file for more information.
  
-***Contact***
+##Contact##
 If you have any questions or suggestions, feel free to reach out to me at:
 
 Email: sachinsingh6386@gmail.com
